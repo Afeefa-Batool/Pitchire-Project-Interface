@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <link rel="stylesheet" href="./css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="animate.css-master/animate.min.css"> -->
     <link rel="stylesheet" href="./css/animate.css-master/animate.min.css">
 
 
@@ -33,20 +31,21 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active mx-2" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link active mx-1" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2" aria-current="page" href="./about.html">About</a>
+                            <a class="nav-link mx-1" aria-current="page" href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2" href="./facilities.html">Facilities</a>
+                            <a class="nav-link mx-1" href="./facilities.html">Facilities</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2" href="./contact.html">Contact</a>
+                            <a class="nav-link mx-1" href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <div class="btn  btn-sm mx-2 mt-1 text-light" style="background-color: #23C55E;">Login<i
-                                    class="fa fa-arrow-right text-light right-arrow" aria-hidden="true"></i>
+                            <div class="btn  btn-sm mx-1 mt-1 text-light" style="background-color: #23C55E;">Login
+                                <i class="fa-solid fa-arrow-right text-light right-arrow"></i>
+
                             </div>
 
                         </li>
@@ -59,141 +58,157 @@
     <!-- =======end navigaton bar========     -->
     <!-- ======Start hero image======== -->
 
-    <div class="banner ">
-        <div class="container wow fadeInLeft col-lg-8 text-center">
-                    <h3 class="banner-h3 pt-5">Contact Us</h3>
-                    <p class="banner-p1">It has roots in a piece of classical Latin literature from 45 BC, making it
-                        over 2000
-                        years old</p>
-                    <p class="p2 pb-5">Learn more<i class="fa fa-arrow-right right-arrow" aria-hidden="true"></i>
-                    </p>
+    <div class="banner banner-background">
+        <div class="container col-lg-5 text-center">
+            <h3 class="banner-h3 pt-5">Contact Us</h3>
+            <p class="banner-p1">It has roots in a piece of classical Latin literature from 45 BC, making it
+                over 2000
+                years old</p>
+        
+                <div class="social-icons  d-flex justify-content-center">
+                    <a class="nav-link" href=""> <i class="fa-brands fa-facebook-f  facebook"></i>
+                    </a>
+                    <a class="nav-link" href=""> <i class="fa-brands fa-twitter  instagram"></i>
+                    </a>
+                    <a class="nav-link" href=""> <i class="fa-brands fa-instagram twitter"></i>
+                    </a>
+                    <a class="nav-link" href=""> <i class="fa-brands fa-linkedin linkdin"></i>
+                    </a>
+                </div>
+           
 
-               
-    
+<br>
+<br><br>
 
 
-                           
+
+
+        </div>
+
+    </div>
+
+    <!-- ========end hero image========= -->
+    <!-- ======= Contact Section ======= -->
+    <section class="contact">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="mb-5 mt-5">How to Find Us</h3>
+                    <div class="info">
+                        <div class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4>Location:</h4>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>info@example.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+1 5589 55488 55s</p>
                         </div>
 
                     </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-5 mt-5">Get in Touch</h3>
 
-                    <!-- ========end hero image========= -->
-                    <!-- ======= Contact Section ======= -->
- <section id="contact" class="contact">
-  
+                    <form role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <button type="button" class="btn text-white" style="background-color: #23C55E;">Submit</button>
 
-    <div class="container" data-aos="fade-up">
 
-      <div class="row mt-5">
-
-        <div class="col-lg-4">
-          <div class="info">
-            <div class="address">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+                    </form>
+                </div>
             </div>
-
-            <div class="email">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                <h4>Email:</h4>
-              <p>info@example.com</p>
-            </div>
-
-            <div class="phone">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
-                <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
-            </div>
-
-          </div>
-
         </div>
+    </section>
 
-        <div class="col-lg-8 mt-5 mt-lg-0">
 
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
 
-        </div>
+    <section class="contact">
 
-      </div>
-
-    </div>
-  </section><!-- End Contact Section -->
-<!-- ========contact us page end========= -->
+        <!-- End Contact Section -->
+        <!-- ========contact us page end========= -->
         <!-- =======start footer======= -->
 
         <!-- =======end main footer============ -->
-        <footer id="footer">
+        <footer class="footer">
 
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-links">
-                            <h4>categories</h4>
+                            <h5 class="heading-4">categories</h5>
                             <ul>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">Home</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">About us</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">Services</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">Terms of
-                                        service</a></li>
+                                        service</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-links">
-                            <h4>categories</h4>
+                            <h5 class="heading-4">Terms of services</h5>
                             <ul>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">Home</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">About us</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">Services</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">Terms of
-                                        service</a></li>
+                                        service</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-links">
-                            <h4>categories</h4>
+                            <h5 class="heading-4">Privacy Policy</h5>
                             <ul>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">Home</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">About us</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">Services</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="nav-link">Terms of
-                                        service</a></li>
+                                        service</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-info">
-                            <h3>Subscribe</h3>
+                            <h5>Subscribe</h5>
 
-                            <p>Placeholder</p>
+                            <p>Enter Email</p>
 
-                            <div class="row gx-3">
-                                <div class="col-md-7">
-
-                                    <input type="text" class="form-control" aria-label="First name">
-                                </div>
-                                <div class="col">
-                                    <button type="submit" class="btn btn-warning">Button</button>
-                                </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <button type="submit" class="btn text-white pl-3"
+                                    style="background-color: #23C55E;">Submit</button>
                             </div>
+
                             <p>Cras fermentum odio Justo eget nada terra videa magna derita
                             </p>
                         </div>
@@ -206,26 +221,22 @@
 
         <!-- ========copy right footer======= -->
         <div class="footer2 bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 mt-3">
-                        <a class="navbar-brand text-dark" href="#">
-                            <img src="images/logo.png" width="40" height="40" class="img-fluid img-resposive" alt="">
-                            PITCHIRE
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-sm-12 mt-3">
-                        <div class=" d-flex justify-content-between mb-0 ">
-                            <div class="ms-auto text-secondary ">
-                                <i class="fa fa-facebook mx-2" aria-hidden="true"></i>
-                                <i class="fa fa-twitter mx-2" aria-hidden="true"></i>
-                                <i class="fa fa-instagram mx-2" aria-hidden="true"></i>
-                                <i class="fa fa-linkedin mx-2" aria-hidden="true"></i>
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand text-dark mt-1" href="#">
+                    <img src="images/logo.png" width="40" height="40" class="img-fluid img-resposive" alt="">
+                    PITCHIRE
+                </a>
 
-                            </div>
-                        </div>
+                <div class="mt-3  mb-0 ">
+                    <div class="ms-auto text-secondary mx-3 ">
+                        <i class="fa-brands fa-facebook-f mx-2"></i>
+                        <i class="fa-brands fa-twitter mx-2"></i>
+                        <i class="fa-brands fa-instagram mx-2"></i>
+                        <i class="fa-brands fa-linkedin mx-2"></i>
                     </div>
                 </div>
+
+
             </div>
         </div>
 
@@ -237,17 +248,16 @@
 
 
 
-        <!-- <script src="WOW-master/dist/wow.min.js"></script> -->
+
         <script src="./js/WOW-master/dist/wow.min.js"></script>
 
         <script>
             new WOW().init();
 
         </script>
-        <script src="https://use.fontawesome.com/a1a2fde33f.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
