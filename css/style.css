@@ -80,6 +80,12 @@ z-index: 1; */
   padding-top: 6px;
   padding-inline: 16px;
 }
+input[type="text1"],  input[type="text2"],  input[type="text3"] {
+
+  background-color :#F8F8FA; 
+  height: 49px;
+
+}
 /* ====card section 1==== */
 .cards-section1 p h5{
   font-family: 'Noto Sans', sans-serif;
@@ -540,8 +546,27 @@ section .section-title{
           font-size: inherit;
           fill: var(--uim-color, currentColor);
       }
-      
-      
+      .user-photo {
+        width: 120px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+     .img-cover{
+      height: 111px;
+      width: 121px;
+    }
+    .card{
+      transition:1s;
+      cursor:pointer;
+    }
+
+    
+    .card:hover{
+      transform: scale(1.05);
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    }
+    
     /* =====facilities page end====== */
     /* ======contact page start====== */
     .contact {
