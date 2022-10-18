@@ -9,6 +9,10 @@
   padding-inline: 6px;
 }
 /* ======Start hero image========  */
+.navbar-light .navbar-toggler {
+  color: rgb(255 255 255 / 55%);
+  border-color: rgb(255 255 255 / 10%);
+}
 .banner {
   width: 100%;
 
@@ -50,6 +54,41 @@
   cursor: pointer;
   text-align: center;
 }
+/* ======cookies====== */
+.cookie {
+  width: 420px;
+  height: 100px;
+  background-color: rgb(59, 59, 59);
+  position: fixed;
+  bottom: 20px;
+  border-radius: 10px;
+  right: 1%;
+  padding: 10px 20px;
+  z-index: 2;
+}
+
+.cookie .txt {
+  float: left;
+  width: 65%;
+}
+.txt p {
+  color: #ffffff;
+  margin-top: 11px;
+}
+
+.cookie .accept {
+  background-color: #23c55e;
+  color: #fff !important;
+  border-radius: 4px;
+  padding: 6px 25px;
+  font-size: 19px;
+  margin-top: 4.5%;
+  margin-left: 3%;
+}
+.cookie .accept:hover {
+  background-color: #30b867;
+}
+
 /* ========end hero image========= */
 /* ========content section========= */
 
@@ -76,7 +115,7 @@
   font-family: "Noto Sans", sans-serif;
 }
 .card-para {
-  text-align: justify;
+  text-align: left;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
 }
@@ -223,28 +262,20 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.about .content h3 {
+.about h2 {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
-.about .content p li {
+.about p {
   font-size: 17px;
   font-family: "Poppins", sans-serif;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
+.form-control:focus {
+  box-shadow: none;
 }
-
-.about .content ul li {
-  padding-bottom: 10px;
-}
-
-.about .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #5fcf80;
+.btn:focus {
+  box-shadow: none;
 }
 /* counter section start========  */
 .counter-container {
@@ -347,28 +378,27 @@
   transition: 0.5s all ease;
 }
 @media (max-width: 576px) {
-  .about h2 {
-    margin: 0 0 36px 0;
-  }
-  .about img {
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 100%;
-  }
-  .about h3 {
-    margin-top: -70px;
-  }
   .counter-container {
     margin-top: -24px;
   }
-  .about .abt-h3 {
-    display: none;
-  }
-  .about .about-img {
+
+  .about .img-2 {
     margin-top: -21px;
   }
+  .img-1 img {
+    margin-top: -23px !important;
+  }
+  .img-2 img {
+    margin-top: 23px !important;
+    margin-bottom: -74px !important;
+  }
 }
+/* @media only screen and (max-width: 480px) {
+ .img-1 img {
+    margin-top: -23px !important;
+  }
+
+} */
 
 /* <!-- =======what we do end======= --> */
 .section-intro {
@@ -448,6 +478,7 @@ svg {
 
 /* ======about page end======== */
 /* =====facilities page start====== */
+
 .facilities-p {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -460,16 +491,16 @@ svg {
     url("../images/p13.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;}
-  .section-facilities p{
-    color:white;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-
-  }
-  .section-facilities button{
-    background-color:#E9B308 ;
-  }
+  background-repeat: no-repeat;
+}
+.section-facilities p {
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.section-facilities button {
+  background-color: #e9b308;
+}
 .service-container {
   transition: all 0.5s ease;
 }
@@ -625,12 +656,12 @@ svg {
   height: 111px;
   width: 121px;
 }
-.card {
-  transition: 1s;
+.c1 {
+  transition: 0.5s;
   cursor: pointer;
 }
 
-.card:hover {
+.c1:hover {
   transform: scale(1.05);
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
@@ -673,101 +704,20 @@ svg {
   color: #fff;
   text-decoration: none;
 }
-
-.contact .info {
-  width: 100%;
-  background: #fff;
+/* .bg-contact{
 }
-
-.contact .info i {
-  font-size: 20px;
-  color: #23c55e;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #ecf9f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+.co */
+.contact .bg {
+  background-color: #e7e7e7;
+  box-shadow: 0px 0px 33px -6px rgba(0, 0, 0, 0.83);
 }
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #37423b;
+.contact h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
 }
-
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #657a6d;
+.contact .btn-color {
+  background-color: #23c55e;
 }
-
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
-}
-
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
-  background: #23c55e;
-  color: #fff;
-}
-
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #23c55e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 4px;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: #23c55e;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-.contact button{
-  width: 40%;
-}
-
 
 /* ======contact page start end====== */
 /* ====login register page===== */
@@ -779,4 +729,165 @@ svg {
 }
 .text-color {
   color: #23c55e;
+}
+.btn-signup {
+  width: 100%;
+}
+
+/* ========bussines section========== */
+.bg-color {
+  background-color: #99c4e5;
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.dash-sec-left {
+  font-family: "Noto Sans", sans-serif;
+}
+.dash-sec-left nav {
+  margin: 0;
+  padding: 0;
+}
+.dash-sec-left i {
+  margin-right: 18px;
+  font-size: 18px;
+  color: #686868;
+  margin-left: 24px;
+}
+.dash-sec-left a {
+  font-size: 18px;
+  color: #686868;
+  height: 62px;
+}
+.dash-sec-left a:hover {
+  background-color: #e9e9ec;
+  color: #686868;
+  border-left: 4px solid #23c55e;
+}
+.nav .active {
+  color: #23c55e;
+  font-weight: bold;
+}
+.dash-sec-left h2 {
+  font-weight: bold;
+}
+.dash-sec-left .btn-color {
+  background-color: #e9e9ec;
+  margin-left: 8px;
+}
+.dash-sec-left .btn {
+  width: 104px;
+}
+
+.dash-sec-left card-body {
+  height: 300px;
+}
+.input-file {
+  height: 37px;
+}
+.dash-sec-left a {
+  font-family: "Noto Sans", sans-serif;
+}
+.form-control:focus {
+  box-shadow: none;
+  background-color: #f8f8fa;
+}
+.form-control {
+  border: none;
+  background-color: #f0f0f0;
+  height: 49px;
+}
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+.input-top {
+  margin-top: 10px;
+}
+.input-icon-plus {
+  font-size: 23px;
+}
+
+@media (max-width: 576px) {
+  .right-section i {
+    font-size: 18px;
+    color: #686868;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.insta-logo {
+  height: 22px;
+  width: 22px;
+}
+.profile-logo {
+  height: 93px;
+  width: 96px;
+  margin-top: 15px;
+}
+.bussines-logo {
+  height: 24px;
+  width: 36px;
+}
+.i-pos {
+  padding-top: 14px;
+}
+/* ==========bussines profile page======== */
+/* ===hero section===== */
+.bussines {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
+  position: relative;
+}
+.bussines h2 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+}
+.bussines .get-listed {
+  bottom: 0;
+  position: absolute;
+}
+.bussines .get-listed h2{
+ 
+  font-size: 16px;
+}
+.listed-busines{
+  color: aqua;
+}
+
+
+
+/* =====user details====== */
+.profile-section .card ul li a img {
+  height: 54px;
+  width: 60px;
+}
+.bg-profile .card {
+  box-shadow: -4px 8px 71px -30px rgba(0, 0, 0, 0.67);
+}
+
+@media (max-width: 576px) {
+  .profile-section .card ul li a img {
+    height: 30px;
+    width: 29px;
+  }
+}
+.tab-pane .thumb .fancybox img{
+  height: 226px;
+  width: 262px;
+  margin-bottom: 25px;
 }
